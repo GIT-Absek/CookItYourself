@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Breakfast"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/pd" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="298dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Dosa – a thin and crispy crepe made from rice and urad dal (black lentils), served with Coconut Chutney and Vegetable Sambar is a match made in heaven! This popular breakfast item is not only healthy but also easy to prepare."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n3/4 cup Parboiled Rice,\n3/4 cup Regular Rice,\n1/2 cup Whole Urad Dal or Split Urad Dal,\n1/4 teaspoon Fenugreek Seeds,\n1/2 tablespoon Chana Dal,\nWater, as needed,\nSalt to taste,\nOil, for shallow frying."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="343dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - Take all the ingredients to prepare the dosa batter. Step 2 - Rinse both types of rice together in water for 3-4 times and soak them in 2 cups of water for 4-5 hours. Step 3 - Rinse urad dal and chana dal together in water, add fenugreek seeds and soak in 1 cup water for 4-5 hours. Step 4 - Drain water from urad dal in a small bowl and reserve it. Add drained urad dal, chana dal and fenugreek seeds mixture in the medium jar of a mixer grinder or blender. Step 5 - Add water as needed and grind until smooth and fluffy batter. Step 6 - The batter should be fluffy and not very thick. Transfer it to a large container. Step 7 - Drain water from rice and add them to the same mixer grinder jar. Step 8 - Add water as needed and grind until smooth texture. Don’t add too much water in a single go; add 1-2 tablespoons water at a time. Rice requires less water compared to urad dal while grinding. Rice batter will be little grainy and will not be as smooth as urad dal batter. Transfer it to the same container having urad dal batter in it. Step 9 - Add salt and mix both batters well using spoon. The final batter should not be too thick or too watery. Cover it with plate and leave it at room temperature for 8-10 hours or overnight for fermentation. During cold weather, keep the batter in warm place for fermentation. Step 10 - During fermentation, the batter volume would increase and the tiny bubbles would appear on the surface when you stir it with a spoon. Stir the batter with a spoon. If it looks too thick, add few tablespoons water and mix well until it has attained pouring consistency. Step 11 - Heat non-stick tava over medium flame. Apply 1/2-teaspoon oil on the griddle and spread it evenly with a spatula. Take a ladle full of batter, pour it over the surface of tawa, swirl it as thin as possible in a spiral motion by rotating ladle and make it into round shape. Step 12 - Apply 1-teaspoon oil around the edges of dosa. Step 13 - Cook until the bottom surface turns light brown and the edges start to come upward, it will take around 2-minutes. Step 14 - Flip it and cook for a minute."
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageslider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="3000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/bguide3text"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Having the most essential cooking tools in your cupboard will make your life so much easier.
+Although the kitchen world comes out with sleek, trendy, and exciting kitchen gadgets all the time, that doesn’t mean you need to buy every single one to be able to cook well.
+In fact, the most basic tools are all you need to start cooking delicious meals.
+With these items, you’ll be able to cook just about anything -
+FRYING PAN, SAUCEPAN, KNIVES, MEASURING SPOONS, MEASURING CUPS, CUTTING BOARD, RICE COOKER and other tools as per the dish you are cooking."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageslider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

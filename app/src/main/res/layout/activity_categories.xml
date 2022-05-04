@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Categories"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Type"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Dinner"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast" />
+
+        <TextView
+            android:id="@+id/dessert"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Dessert"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Lunch"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/dessert" />
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Breakfast"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoryCuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryType">
+
+        <TextView
+            android:id="@+id/cuisine"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Cuisine"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/northindian"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="NorthIndian"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+        <TextView
+            android:id="@+id/indochinese"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="IndoChinese"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/northindian" />
+
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Others"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/indochinese"
+            app:layout_constraintTop_toBottomOf="@+id/southindian" />
+
+        <TextView
+            android:id="@+id/southindian"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="SouthIndian"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/northindian"
+            app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoryBeverages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryCuisine">
+
+        <TextView
+            android:id="@+id/beverages"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Beverages"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/milkshake"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Milkshake"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tea" />
+
+        <TextView
+            android:id="@+id/soup"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Soup"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/milkshake"
+            app:layout_constraintTop_toBottomOf="@+id/coffee" />
+
+        <TextView
+            android:id="@+id/coffee"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Coffee"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/tea"
+            app:layout_constraintTop_toBottomOf="@+id/beverages" />
+
+        <TextView
+            android:id="@+id/tea"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Tea"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beverages" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoryFastfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryBeverages">
+
+        <TextView
+            android:id="@+id/fastfood"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Fast Food"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pizza"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Pizza"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fastfood" />
+
+        <TextView
+            android:id="@+id/burger"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Burger"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/pizza"
+            app:layout_constraintTop_toBottomOf="@+id/fastfood" />
+
+        <TextView
+            android:id="@+id/sandwich"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Sandwich"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/burger" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Masalachai"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/mt" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Masala chai is an Indian beverage made by brewing black tea with spices, sugar and milk."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n4 teaspoons loose-leaf black tea\n1 or 2 cinnamon sticks.\n1 or 2 black cardamom pods crushed.\n2 to 4 green cardamom pods crushed.\n1 or 2 quarter-size slices fresh ginger.\n1 and 1/2 tablespoons sugar.\n1 cup whole or low-fat milk."
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="341dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - Pour 2 cups water into a medium saucepan and add tea and spices. Bring to a boil over high heat and boil 2 minutes.\n\nStep 2 - Add sugar and milk and return to a boil. Reduce heat to medium and boil gently 2 minutes, stirring occasionally. Strain and pour into small cups or heatproof glasses."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

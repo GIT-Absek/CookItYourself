@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Breakfast"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/mp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Matar Paneer (Mutter Paneer), a delicious combination of soft paneer and healthy green peas in a mild spicy tomato based gravy, is a treat to taste buds at anytime."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="151dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n1 cup fresh or frozen Green Peas,
+ 3/4 cup Paneer,
+ 1 medium Onion, finely chopped,
+ 1 Green Chilli, chopped,
+ 2-3 cloves of Garlic,
+ 2 medium Tomatoes, roughly chopped,
+ 5-6 Cashew Nuts, soaked in hot water for 20-30 minutes,
+ 1/2 teaspoon Red Chilli Powder,
+ 1/4 teaspoon Turmeric Powder,
+ 1 teaspoon Coriander Powder,
+ 1/4 teaspoon Garam Masala Powder,
+ For shallow frying + 2 tablespoons Oil or Ghee,
+ 1/2 cup + 2 tablespoons Water,Salt to taste."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="336dp"
+        android:layout_height="202dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - Grind onion, green chilli, ginger and garlic together in the small chutney jar of a grinder to make medium coarse paste. Grind the tomatoes to make tomato puree. Grind cashew nuts with 2 tablespoons water until smooth paste.
+ Step 2 - Heat 2 tablespoons oil in the same pan/kadai over medium flame. Add crushed onion paste (prepared in step-1) and salt (only for onion paste, it helps to cook onion faster). Sauté it until oil starts to separate or it turns translucent. It will take around 5-7 minutes.
+ Step 3 - Add tomato puree (prepared in step-1) and cook on medium flame until oil starts to separate, for approx. 5-6 minutes.
+ Step 4 - Add red chilli powder, turmeric powder, coriander powder, garam masala powder and salt.
+ Step 5 - Stir and cook for a minute. Add cashew nut paste (prepared in step-1).
+ Step 6 - Stir and cook for 1-2 minutes.
+ Step 7 - Add boiled peas and 1/2 cup water; mix properly and cook for 2-3 minutes.
+ Step 8 - Add paneer cubes and cook for 2-3 minutes. We have added plain paneer cubes but you can add shallow fried paneer to enhance the flavor.
+ Step 9 - Turn off flame and transfer prepared curry to a serving bowl. Matar paneer is ready. Serve it with butter kulcha, cucumber tomato onion salad and for a complete meal."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

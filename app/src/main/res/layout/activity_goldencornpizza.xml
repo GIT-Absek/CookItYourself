@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Goldencornpizza"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/gcpz" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Corn over the base makes it look beautiful. It is served with tomato sauce and chili flakes are sprinkled over the topping according the taste. After mixing all the ingredients, it is baked by adding cheese and corn for added flavor to pizza. Corn adds health and sweet taste to the pizza."
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n1 pizza base.\n1 cheese cube.\n1/2 cup boiled corn.\n1 tbsp oregano.\n1 tsp chilli flakes.\n1 tbsp pizza sauce"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="339dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Procedure-\n\nStep 1 - Take pizza base. Apply pizza sauce.\nStep 2 - Sprinkle sweet corn. Grate cheese over it. Sprinkle oregano and Chilli flakes.\nStep 3 - Preheat the pan. Put the pizza in it cover it cook till cheese melts.\nStep 4 - Serve with sauce."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

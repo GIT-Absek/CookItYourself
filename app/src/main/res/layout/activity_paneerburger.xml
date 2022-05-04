@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Paneerburger"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/pb" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Paneer Burger is a unique and delicious burger recipe which is an Indian fusion recipe. You can say it is one of the Indian street food version that includes paneer."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\nPaneer 500 gm. All-Purpose Flour 80-100 gm. Red Chili Powder 1 tsp. Green Chili Paste 1 tbsp. Black Pepper 1 tsp. Salt As Per Taste. Lemon Juice 2-3 tbsp. Water As Required. Bread Crumbs 30-40 gm. Butter 2-3 tbsp. Bun 3 pcs. Tomato Sauce 3-4 tbsp. Mayonnaise 1 tbsp. Peri-Peri Masala 1 tbsp. Cabbage 2-3 leaves"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="339dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - Cut the paneer into large pieces.
+ Step 2 - Take a bowl. Add all-purpose flour, red chili powder, green chili paste, black pepper, salt, lemon juice, and water. Mix everything. Add water gradually if needed more to get the thickness required.
+ Step 3 - Coat the paneer pieces into the mixture. Then coat it with the bread crumbs properly. Heat oil in a pan. Deep-fry the paneer until it turns golden brown, and the outer layer turns slightly crisp.
+ Step 4 - Take another pan and melt butter into it. Roast the slices of burger buns into it from both sides for a minute.
+ Step 5 - In a bowl, add ketchup, mayonnaise, and peri-peri masala. Mix it properly.
+ Step 6 - Take the slices and spread the sauce on them. Place the cabbage, paneer and cover the other slice on it.
+ Paneer Burger is ready. Enjoy it with fries and chilled drinks."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

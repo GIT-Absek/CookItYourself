@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Breakfast"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/pp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="298dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Palak Paneer is a popular North Indian curry made of blanched spinach and soft paneer. This restaurant style spicy Punjabi palak paneer recipe prepares a yummy curry by cooking shallow fried paneer cubes in a healthy spinach gravy, which is sautéed with finely balanced curry spices in aromatic ghee."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n 1 large bunch or 4 cups chopped Spinach,
+150 gm Paneer,
+ 1-2 Green Chillies seeded and chopped,
+ 1/2 teaspoon Cumin Seeds,
+ 1 large Onion finely chopped,
+ 1 teaspoon Ginger Garlic Paste,
+ 1 teaspoon Lemon Juice,
+ 2 tablespoons Fresh Cream,
+ 1/3 cup Water,
+ 2 tablespoons Oil + 1 tablespoon Butter. Salt to taste."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="341dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - Clean and wash spinach in water to remove any soil or impurities. To blanch the spinach, boil it in salted water for 2 minutes.
+ Step 2 - Drain it using a big perforated spoon or a strainer. Immediately transfer drained spinach into cold water and keep for a minute.
+ Step 3 - Drain excess water and transfer blanched spinach to the medium size jar of a mixer grinder. Add green chillies and grind until smooth puree. If required, add few tablespoons of water while grinding.
+ Step 4 - Heat 1 tablespoon oil in a non-stick pan or kadai over medium flame. Add paneer cubes and shallow fry them until the sides turn light brown. Transfer them to a plate and keep aside. You can remove excess ghee or oil from it by placing them on absorbent kitchen paper napkin.
+ Step 5 - Heat remaining 1-tablespoon oil and 1-tablespoon butter together in the same pan over medium flame. Add cumin seeds and saute them for 30 seconds. (If you don’t like cumin seeds, you can avoid it.) Add finely chopped onion and stir fry until it turns translucent. Add ginger-garlic paste and stir fry for 30 seconds.
+ Step 6 - Add spinach puree and salt. Stir and cook for 2-3 minutes.
+ Step 7 - Add 1/3 cup water. Mix well and bring it to a boil. Stir occasionally in between.
+ Step 8 - When gravy starts to boil, add shallow fried paneer cubes and cook for 3-4 minutes.
+ Step 9 - Add lemon juice, kasuri methi and mix well. Turn off the flame and mix milk cream."
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

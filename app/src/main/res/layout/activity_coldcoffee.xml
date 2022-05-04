@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Coldcoffee"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/cc" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="297dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Frosty and satisfying cold coffee is a fantastic treat to enjoy on a warm day. This coffee are perfectly sweet, creamy and frothy just like from your favorite cafe!"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n1 tablespoon instant coffee.\n1/4 cup warm water.\n3 to 4 tablespoon sugar.\n2 cups milk cold or chilled.\n6 to 8 ice cubes."
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="339dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - In a blender take your instant coffee, sugar, add warm water.
+ Step 2 - Blend for a minute or until the coffee solution becomes frothy and the brown color lightens a bit.
+ Step 3 - Add 6 to 7 ice cubes. For a thick cold coffee, put ice cubes from 2 to 4. Pour 2 cups cold milk.
+ Step 4 - Whole milk gives a slightly thicker consistency and is richer.
+ Step 5 - Blend for 1 to 2 minutes or until the milk is mixed evenly with the coffee concoction and you see a nice frothy layer on top.
+ Step 6 - Pour in glasses and serve cold coffee. The frothy top layer will settle into the beverage as it sits, so it’s best to enjoy blended iced coffee right away."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

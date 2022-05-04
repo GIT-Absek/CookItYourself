@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Breakfast"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-450dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="184dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/aalogrilledsandwich" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="297dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="This potato stuffed sandwich with spices taste awesome. A heavy and healthy quick bite for breakfast goes great. It can be made on the tawa or grilled in the oven."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="147dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Ingredients-\n\n2 small sized potato (boiled and pealed),1/2 onion (finely chopped),salt to taste,1/2 tsp kashmiri chilli powder,1/4 tsp chaat masala,butter to grill,1/4 tsp mixed herbs,4 bread slices,2 tsp green chutney,2 tsp tomato sauce"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="341dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="16dp"
+        android:text="Procedure-\n\nStep 1 - In a large mixing bowl mash boiled potatoes. Also add in chopped onions. Also add chilli powder, chaat masala, mixed herbs and salt.
+ \nStep 2 - Mix and mash the potatoes well. Further take bread slices and spread green chutney and tomato sauce.
+ \nStep 3 - Spread the generous amount of prepared potato stuffing. Cover with the other bread slice and press gently.
+ \nStep 4 - Grill or toast on tawa adding some butter. Spread butter on both the outer sides of bread to make sandwich more crispy and golden.
+ \nStep 5 - Close the griller and grill till the cheese melts and bread turn golden brown.
+ \nStep 6 - Now cut the bread into half and serve."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
